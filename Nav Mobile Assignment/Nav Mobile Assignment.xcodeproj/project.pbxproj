@@ -15,6 +15,8 @@
 		834A61D21CD9BEDE00D8A244 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A61D11CD9BEDE00D8A244 /* Movie.swift */; };
 		834A61D41CD9C0B600D8A244 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A61D31CD9C0B600D8A244 /* NetworkController.swift */; };
 		834A61D61CD9C67300D8A244 /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A61D51CD9C67300D8A244 /* MovieController.swift */; };
+		834A61DA1CDAA22000D8A244 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A61D91CDAA22000D8A244 /* ResultsViewController.swift */; };
+		834A61DC1CDAA47500D8A244 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A61DB1CDAA47500D8A244 /* MovieCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		834A61D11CD9BEDE00D8A244 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		834A61D31CD9C0B600D8A244 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		834A61D51CD9C67300D8A244 /* MovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		834A61D91CDAA22000D8A244 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		834A61DB1CDAA47500D8A244 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,35 @@
 		834A61BE1CD9B41300D8A244 /* Nav Mobile Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				834A61D81CDA99F500D8A244 /* Views */,
+				834A61D71CDA99CB00D8A244 /* Controllers */,
 				834A61BF1CD9B41300D8A244 /* AppDelegate.swift */,
-				834A61C11CD9B41300D8A244 /* HomeViewController.swift */,
 				834A61D11CD9BEDE00D8A244 /* Movie.swift */,
-				834A61D31CD9C0B600D8A244 /* NetworkController.swift */,
-				834A61D51CD9C67300D8A244 /* MovieController.swift */,
 				834A61C31CD9B41300D8A244 /* Main.storyboard */,
 				834A61C61CD9B41300D8A244 /* Assets.xcassets */,
 				834A61C81CD9B41300D8A244 /* LaunchScreen.storyboard */,
 				834A61CB1CD9B41300D8A244 /* Info.plist */,
 			);
 			path = "Nav Mobile Assignment";
+			sourceTree = "<group>";
+		};
+		834A61D71CDA99CB00D8A244 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				834A61D31CD9C0B600D8A244 /* NetworkController.swift */,
+				834A61D51CD9C67300D8A244 /* MovieController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		834A61D81CDA99F500D8A244 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				834A61C11CD9B41300D8A244 /* HomeViewController.swift */,
+				834A61D91CDAA22000D8A244 /* ResultsViewController.swift */,
+				834A61DB1CDAA47500D8A244 /* MovieCollectionViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +170,9 @@
 				834A61D61CD9C67300D8A244 /* MovieController.swift in Sources */,
 				834A61C21CD9B41300D8A244 /* HomeViewController.swift in Sources */,
 				834A61C01CD9B41300D8A244 /* AppDelegate.swift in Sources */,
+				834A61DC1CDAA47500D8A244 /* MovieCollectionViewCell.swift in Sources */,
 				834A61D21CD9BEDE00D8A244 /* Movie.swift in Sources */,
+				834A61DA1CDAA22000D8A244 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
