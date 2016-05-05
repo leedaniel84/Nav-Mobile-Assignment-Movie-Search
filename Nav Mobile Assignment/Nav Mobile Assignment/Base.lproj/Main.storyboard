@@ -46,6 +46,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Zzg-Yb-Fwv" kind="show" identifier="tableMovieTapped" id="0Yd-Xy-1A1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -71,6 +74,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="566" y="-353"/>
+        </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="TH6-fs-2SY">
+            <objects>
+                <viewController id="Zzg-Yb-Fwv" customClass="MovieDetailViewController" customModule="Nav_Mobile_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E5M-DM-sJT"/>
+                        <viewControllerLayoutGuide type="bottom" id="54Q-fj-vev"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pjs-AQ-Z8G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-X4-fe3" userLabel="Title">
+                                <rect key="frame" x="20" y="20" width="280" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4c-zc-jnz" userLabel="Rating">
+                                <rect key="frame" x="20" y="80" width="280" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8a-D9-D7M" userLabel="Summary">
+                                <rect key="frame" x="20" y="320" width="280" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y4c-zc-jnz" firstAttribute="trailing" secondItem="4Nb-X4-fe3" secondAttribute="trailing" id="2b6-Od-4bU"/>
+                            <constraint firstItem="4Nb-X4-fe3" firstAttribute="top" secondItem="E5M-DM-sJT" secondAttribute="bottom" id="AbV-Fr-jmu"/>
+                            <constraint firstItem="y4c-zc-jnz" firstAttribute="top" secondItem="4Nb-X4-fe3" secondAttribute="top" constant="60" id="FRT-zC-bo8"/>
+                            <constraint firstItem="J8a-D9-D7M" firstAttribute="trailing" secondItem="4Nb-X4-fe3" secondAttribute="trailing" id="J3q-Zt-BRg"/>
+                            <constraint firstItem="54Q-fj-vev" firstAttribute="top" secondItem="4Nb-X4-fe3" secondAttribute="bottom" constant="508" id="Mfr-Ti-sGp"/>
+                            <constraint firstItem="J8a-D9-D7M" firstAttribute="top" secondItem="4Nb-X4-fe3" secondAttribute="top" constant="300" id="P55-hQ-JoA"/>
+                            <constraint firstItem="4Nb-X4-fe3" firstAttribute="centerX" secondItem="Pjs-AQ-Z8G" secondAttribute="centerX" id="W4g-FE-tj5"/>
+                            <constraint firstItem="J8a-D9-D7M" firstAttribute="leading" secondItem="4Nb-X4-fe3" secondAttribute="leading" id="cb4-K1-XpP"/>
+                            <constraint firstItem="y4c-zc-jnz" firstAttribute="leading" secondItem="4Nb-X4-fe3" secondAttribute="leading" id="fu6-hn-Wj4"/>
+                            <constraint firstItem="4Nb-X4-fe3" firstAttribute="leading" secondItem="Pjs-AQ-Z8G" secondAttribute="leadingMargin" constant="4" id="rtg-WX-NSr"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ratingsLabel" destination="y4c-zc-jnz" id="7UL-1c-EK7"/>
+                        <outlet property="summaryLabel" destination="J8a-D9-D7M" id="kVm-22-aTY"/>
+                        <outlet property="titleLabel" destination="4Nb-X4-fe3" id="a2F-Qn-FKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcl-q3-Ni1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="-353"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="cZG-xL-013">
@@ -150,6 +209,7 @@
                                             <outlet property="ratingLabel" destination="CAq-jB-YEo" id="As5-HS-NpW"/>
                                             <outlet property="summaryLabel" destination="Ege-A2-P8a" id="chz-Pe-tIq"/>
                                             <outlet property="titleLabel" destination="KTc-3r-4KM" id="ish-gQ-2xd"/>
+                                            <segue destination="Zzg-Yb-Fwv" kind="show" identifier="collectionMovieTapped" id="0gM-sN-4gP"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -195,4 +255,7 @@
             <point key="canvasLocation" x="168" y="-353"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0gM-sN-4gP"/>
+    </inferredMetricsTieBreakers>
 </document>

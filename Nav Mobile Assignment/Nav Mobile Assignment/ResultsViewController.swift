@@ -24,15 +24,21 @@ class ResultsViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "collectionmovieTapped" {
+//            guard let cell = sender as? UICollectionViewCell else { return }
+//            let indexPath = self.collectionView.indexPathForCell(cell)!
+//            let selectedMovie = self.filteredMovies[indexPath.item]
+//            
+//            let detailViewController = segue.destinationViewController as! MovieDetailViewController
+//            detailViewController.movie = selectedMovie
+//        }
+//    }
+    
 
 }
 
@@ -55,5 +61,11 @@ extension ResultsViewController: UICollectionViewDataSource, UICollectionViewDel
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSize(width: self.view.frame.size.width/2.15, height: self.view.frame.size.height/3)
     }
+    
+//    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//        self.performSegueWithIdentifier("collectionMovieTapped", sender: self)
+//        
+//    }
+    func colle
     
 }

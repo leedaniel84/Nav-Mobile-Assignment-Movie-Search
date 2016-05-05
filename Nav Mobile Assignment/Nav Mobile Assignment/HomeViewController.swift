@@ -34,6 +34,19 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "tableMovieTapped" {
+            guard let cell = sender as? UITableViewCell else { return }
+            
+            let indexPath = self.tableView.indexPathForCell(cell)!
+            let selectedMovie = self.results![indexPath.row]
+            
+            let detailViewController = segue.destinationViewController as! MovieDetailViewController
+            detailViewController.movie = selectedMovie
+        }
+    }
+    
 
 
 }

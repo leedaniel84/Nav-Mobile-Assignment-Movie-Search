@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8309927E1CDBC478007268AA /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309927D1CDBC478007268AA /* MovieDetailViewController.swift */; };
 		834A61C01CD9B41300D8A244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A61BF1CD9B41300D8A244 /* AppDelegate.swift */; };
 		834A61C21CD9B41300D8A244 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A61C11CD9B41300D8A244 /* HomeViewController.swift */; };
 		834A61C51CD9B41300D8A244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834A61C31CD9B41300D8A244 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8309927D1CDBC478007268AA /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		834A61BC1CD9B41300D8A244 /* Nav Mobile Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nav Mobile Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		834A61BF1CD9B41300D8A244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		834A61C11CD9B41300D8A244 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				834A61C11CD9B41300D8A244 /* HomeViewController.swift */,
+				8309927D1CDBC478007268AA /* MovieDetailViewController.swift */,
 				834A61D91CDAA22000D8A244 /* ResultsViewController.swift */,
 				834A61DB1CDAA47500D8A244 /* MovieCollectionViewCell.swift */,
 			);
@@ -170,6 +173,7 @@
 				834A61D61CD9C67300D8A244 /* MovieController.swift in Sources */,
 				834A61C21CD9B41300D8A244 /* HomeViewController.swift in Sources */,
 				834A61C01CD9B41300D8A244 /* AppDelegate.swift in Sources */,
+				8309927E1CDBC478007268AA /* MovieDetailViewController.swift in Sources */,
 				834A61DC1CDAA47500D8A244 /* MovieCollectionViewCell.swift in Sources */,
 				834A61D21CD9BEDE00D8A244 /* Movie.swift in Sources */,
 				834A61DA1CDAA22000D8A244 /* ResultsViewController.swift in Sources */,
