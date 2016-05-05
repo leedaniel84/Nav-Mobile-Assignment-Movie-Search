@@ -27,17 +27,22 @@ class ResultsViewController: UIViewController {
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "collectionmovieTapped" {
-//            guard let cell = sender as? UICollectionViewCell else { return }
-//            let indexPath = self.collectionView.indexPathForCell(cell)!
-//            let selectedMovie = self.filteredMovies[indexPath.item]
-//            
-//            let detailViewController = segue.destinationViewController as! MovieDetailViewController
-//            detailViewController.movie = selectedMovie
-//        }
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "collectionMovieTapped" {
+            guard let cell = sender as? UICollectionViewCell else { return }
+            let indexPath = self.collectionView.indexPathForCell(cell)!
+            let selectedMovie = self.filteredMovies[indexPath.item]
+            
+            let detailViewController = segue.destinationViewController as! MovieDetailViewController
+//            detailViewController.titleLabel.text = filteredMovies[indexPath.item].title
+//            detailViewController.ratingsLabel.text = "\(filteredMovies[indexPath.item].rating)"
+//            detailViewController.summaryLabel.text = filteredMovies[indexPath.item].summary
+//            detailViewController.titleLabel.text = selectedMovie.title
+//            detailViewController.ratingsLabel.text = "\(selectedMovie.rating)"
+//            detailViewController.summaryLabel.text = selectedMovie.summary
+            detailViewController.movie = selectedMovie
+        }
+    }
     
 
 }
@@ -62,10 +67,10 @@ extension ResultsViewController: UICollectionViewDataSource, UICollectionViewDel
         return CGSize(width: self.view.frame.size.width/2.15, height: self.view.frame.size.height/3)
     }
     
-//    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-//        self.performSegueWithIdentifier("collectionMovieTapped", sender: self)
-//        
-//    }
-    func colle
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("collectionMovieTapped", sender: self)
+        
+    }
+    
     
 }

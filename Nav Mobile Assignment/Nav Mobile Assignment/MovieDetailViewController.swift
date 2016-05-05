@@ -23,13 +23,13 @@ class MovieDetailViewController: UIViewController {
         titleLabel.text = movie?.title
         ratingsLabel.text = "\(movie!.rating)"
         summaryLabel.text = movie?.summary
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
