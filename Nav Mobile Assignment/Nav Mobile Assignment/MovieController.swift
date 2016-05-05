@@ -60,8 +60,8 @@ class MovieController {
             do {
                 let resultsAnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
                 
-                if let resultsDictionary = resultsAnyObject as? [String: AnyObject] {
-                    if let resultsArray = resultsDictionary["results"] as? [[String: AnyObject]] {
+                if let resultsDictionary = resultsAnyObject as? [String:AnyObject] {
+                    if let resultsArray = resultsDictionary["results"] as? [[String:AnyObject]] {
                         var arrayOfMovies: [Movie] = []
                         
                         for movieDictionary in resultsArray {

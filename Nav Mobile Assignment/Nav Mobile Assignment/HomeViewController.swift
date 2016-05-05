@@ -48,12 +48,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = movie.title
             cell.detailTextLabel?.text = movie.summary
         }
-        
+//        cell.textLabel?.text = "Testing"
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results?.count ?? 0
+        
+//        return 5
     }
     
 }
@@ -70,13 +72,13 @@ extension HomeViewController: UISearchResultsUpdating {
         searchController.searchBar.placeholder = "Search Movie Titles"
         tableView.tableHeaderView = searchController.searchBar
         definesPresentationContext = true
-    
+        
     }
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        let lowerCaseSearchTerm = searchController.searchBar.text!.lowercaseString
+        let lowercaseSearchTerm = searchController.searchBar.text!.lowercaseString
         
-        MovieController.searchForMovies(lowerCaseSearchTerm) { (movies) -> Void in
+        MovieController.searchForMovies(lowercaseSearchTerm) { (movies) -> Void in
             if let movies = movies {
                 if let resultsController = searchController.searchResultsController as? ResultsViewController {
                     resultsController.filteredMovies = movies
