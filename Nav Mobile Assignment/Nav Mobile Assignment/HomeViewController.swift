@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupSearchController()
+        setUpSearchController()
         MovieController.searchForPopularMovies { (movieArray) -> Void in
             if let movies = movieArray {
                 self.results = movies
@@ -60,7 +60,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension HomeViewController: UISearchResultsUpdating {
     
-    func setupSearchController() {
+    func setUpSearchController() {
         
         let resultsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("resultsViewController")
         
