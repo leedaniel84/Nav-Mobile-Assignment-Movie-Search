@@ -53,7 +53,7 @@ extension ResultsViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.size.width/2 - 1, height: self.view.frame.size.height/3 - 1)
+        return CGSize(width: self.view.frame.size.width/2.15, height: self.view.frame.size.height/3)
     }
     
 }
