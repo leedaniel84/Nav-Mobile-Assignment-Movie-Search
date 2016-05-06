@@ -11,6 +11,7 @@ import UIKit
 class MovieDetailViewController: UIViewController {
     
     var movie: Movie?
+    
     @IBOutlet weak var titleLabel: UILabel!
 
     @IBOutlet weak var ratingsLabel: UILabel!
@@ -21,7 +22,7 @@ class MovieDetailViewController: UIViewController {
         super.viewDidLoad()
 
         titleLabel.text = movie?.title
-        ratingsLabel.text = "\(movie!.rating)"
+        ratingsLabel.text = "Rating: \(movie!.rating)"
         summaryLabel.text = movie?.summary
         
     }

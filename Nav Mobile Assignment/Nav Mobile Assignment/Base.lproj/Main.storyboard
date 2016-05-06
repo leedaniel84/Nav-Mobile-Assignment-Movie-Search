@@ -47,7 +47,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Zzg-Yb-Fwv" kind="show" identifier="tableMovieTapped" id="0Yd-Xy-1A1"/>
+                                            <segue destination="Zzg-Yb-Fwv" kind="show" identifier="tableMovieTapped" id="8qN-Pm-eFx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -75,7 +75,7 @@
             </objects>
             <point key="canvasLocation" x="566" y="-353"/>
         </scene>
-        <!--Details-->
+        <!--Movie Detail View Controller-->
         <scene sceneID="TH6-fs-2SY">
             <objects>
                 <viewController id="Zzg-Yb-Fwv" customClass="MovieDetailViewController" customModule="Nav_Mobile_Assignment" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,7 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8a-D9-D7M" userLabel="Summary">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8a-D9-D7M" userLabel="Summary">
                                 <rect key="frame" x="20" y="320" width="280" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -99,7 +99,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-X4-fe3" userLabel="Title">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-X4-fe3" userLabel="Title">
                                 <rect key="frame" x="20" y="64" width="280" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hsP-Ge-RR3"/>
@@ -123,9 +123,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Details" id="mtS-f4-zvy">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="wvu-mc-7Rj"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="0kR-KI-Of5"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -136,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcl-q3-Ni1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1156" y="-353"/>
+            <point key="canvasLocation" x="1045" y="-353"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="cZG-xL-013">
@@ -216,7 +214,6 @@
                                             <outlet property="ratingLabel" destination="CAq-jB-YEo" id="As5-HS-NpW"/>
                                             <outlet property="summaryLabel" destination="Ege-A2-P8a" id="chz-Pe-tIq"/>
                                             <outlet property="titleLabel" destination="KTc-3r-4KM" id="ish-gQ-2xd"/>
-                                            <segue destination="Zzg-Yb-Fwv" kind="presentation" identifier="collectionMovieTapped" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="0gM-sN-4gP"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -234,14 +231,14 @@
                             <constraint firstItem="MXP-uL-QKW" firstAttribute="top" secondItem="6mZ-gK-qDJ" secondAttribute="top" id="rSV-sx-uba"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xNt-RU-fAh"/>
+                    <navigationItem key="navigationItem" id="fP0-69-JNM"/>
                     <connections>
                         <outlet property="collectionView" destination="MXP-uL-QKW" id="hcn-H8-BSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dw8-sB-M0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="585" y="285"/>
+            <point key="canvasLocation" x="605" y="317"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BWd-Yt-687">
@@ -263,7 +260,4 @@
             <point key="canvasLocation" x="168" y="-353"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="0gM-sN-4gP"/>
-    </inferredMetricsTieBreakers>
 </document>
